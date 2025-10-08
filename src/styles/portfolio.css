@@ -1,0 +1,135 @@
+/* Custom styles for Black & White Theme with Animations */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f7f7f7;
+    scroll-behavior: smooth;
+    color: #1f2937;
+}
+
+/* Base style for section titles */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1f2937;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* Header & Navigation Styles */
+.header-bg {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-bg.scrolled {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link:hover {
+    color: #000000;
+}
+
+/* General Card & Box Styles */
+.card-shadow {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Animation for Interactive Boxes (LIFT EFFECT) */
+.animated-card {
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform, box-shadow;
+}
+
+.animated-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Button Styles */
+.primary-btn {
+    background-color: #1f2937;
+    color: #ffffff;
+    border: 2px solid #1f2937;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.primary-btn:hover {
+    background-color: #000000;
+}
+
+.secondary-btn {
+    background-color: #ffffff;
+    color: #1f2937;
+    border: 2px solid #1f2937;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.secondary-btn:hover {
+    background-color: #f3f4f6;
+    color: #000000;
+}
+
+/* Soft Skills Pills */
+.soft-skill-pill {
+    padding: 0.5rem 1.25rem;
+    border-radius: 9999px;
+    background-color: #ffffff;
+    color: #4b5563;
+    border: 1px solid #d1d5db;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.soft-skill-pill:hover {
+    background-color: #1f2937;
+    color: #ffffff;
+    border-color: #1f2937;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* LOADER ANIMATION STYLES */
+.loader {
+    width: 150px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.Box {
+    width: 20px;
+    height: 8px;
+    background-color: #1f2937;
+    animation: Loader 1s infinite ease;
+}
+
+.Box:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.Box:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.Box:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.Box:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.Box:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+@keyframes Loader {
+    0% { height: 0px; }
+    50% { height: 100px; }
+    100% { height: 0px; }
+}
